@@ -17,16 +17,22 @@ class ProductManager {
 
     init =  ()=>{
       if (!fs.existsSync(this.path)){
-        this.saveProductsInFile('[]') 
-        return []
+        this.saveProductsInFile(this.products) 
+       
       }
      else{//En este caso lo lei sincronicamente puesto que nuestro programa efectivamente necesita de los datos.
       const fileData = fs.readFileSync(this.path,'utf-8')//await this.readProductsInFile()
       //No solo debo ahora asignar la data a products, tmb debo actualizar el IDcount
       //Teniendo en cuenta en que productManager guarda en orden y sin repetir, leo el ultimo id y le sumo1.
       const productListInFile = JSON.parse(fileData)
-      this.countID = productListInFile[productListInFile.length-1].productID + 1
-      this.products = productListInFile
+
+      if (productListInFile.length > 0){
+        this.products = productListInFile
+        this.countID = productListInFile[productListInFile.length-1].productID 
+        
+      }
+
+      
      }
        
 

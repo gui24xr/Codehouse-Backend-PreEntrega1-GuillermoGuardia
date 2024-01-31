@@ -2,7 +2,12 @@ import express from 'express'
 import {ProductManager} from '../controllers/product-manager.js'
 
 //Product manager donde tengo los recursos de la seccion productos de mi server.
-const productManager = new ProductManager('./src/models/productslist.json') // Creo la instnacia de productManager con el archivo de productos ya cargados.(Puse 16)
+const PATHFILEPRODUCTS = './src/models/productos.json'
+/*
+Uso el export xq esta instancia ademas de trabajar aca debe trabajar en el router de carts para desde
+'/api/carts/:cid/products/:pid' agregar productos.
+*/
+export const productManager = new ProductManager(PATHFILEPRODUCTS) // Creo la instnacia de productManager con el archivo de productos ya cargados.(Puse 16)
 
 const router = express.Router()
 

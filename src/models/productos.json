@@ -1,0 +1,258 @@
+[
+    {
+     "productID": 1,
+     "title": "Producto 1",
+     "description": "Descripcion 1",
+     "price": 2008,
+     "code": "abc12311",
+     "stock": 54,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product1imagen1.jpg\"",
+      "\"https://ejemplo.com/product1imagen2.jpg\"",
+      "\"https://ejemplo.com/product1imagen3.jpg\"",
+      "\"https://ejemplo.com/product1imagen4.jpg\"",
+      "\"https://ejemplo.com/product1imagen5.jpg\"" 
+     ]
+    },
+    {
+     "productID": 2,
+     "title": "Producto 2",
+     "description": "Descripcion 2",
+     "price": 4027,
+     "code": "def45622",
+     "stock": 59,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product2imagen1.jpg\"",
+      "\"https://ejemplo.com/product2imagen2.jpg\"",
+      "\"https://ejemplo.com/product2imagen3.jpg\"",
+      "\"https://ejemplo.com/product2imagen4.jpg\"",
+      "\"https://ejemplo.com/product2imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 3,
+     "title": "Producto 3",
+     "description": "Descripcion 3",
+     "price": 6758,
+     "code": "ghi78933",
+     "stock": 4,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product3imagen1.jpg\"",
+      "\"https://ejemplo.com/product3imagen2.jpg\"",
+      "\"https://ejemplo.com/product3imagen3.jpg\"",
+      "\"https://ejemplo.com/product3imagen4.jpg\"",
+      "\"https://ejemplo.com/product3imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 4,
+     "title": "Producto 4",
+     "description": "Descripcion 4",
+     "price": 7276,
+     "code": "jkl01244",
+     "stock": 56,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product4imagen1.jpg\"",
+      "\"https://ejemplo.com/product4imagen2.jpg\"",
+      "\"https://ejemplo.com/product4imagen3.jpg\"",
+      "\"https://ejemplo.com/product4imagen4.jpg\"",
+      "\"https://ejemplo.com/product4imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 5,
+     "title": "Producto 5",
+     "description": "Descripcion 5",
+     "price": 9223,
+     "code": "mno34555",
+     "stock": 30,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product5imagen1.jpg\"",
+      "\"https://ejemplo.com/product5imagen2.jpg\"",
+      "\"https://ejemplo.com/product5imagen3.jpg\"",
+      "\"https://ejemplo.com/product5imagen4.jpg\"",
+      "\"https://ejemplo.com/product5imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 6,
+     "title": "Producto 6",
+     "description": "Descripcion 6",
+     "price": 9644,
+     "code": "pqr67866",
+     "stock": 46,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product6imagen1.jpg\"",
+      "\"https://ejemplo.com/product6imagen2.jpg\"",
+      "\"https://ejemplo.com/product6imagen3.jpg\"",
+      "\"https://ejemplo.com/product6imagen4.jpg\"",
+      "\"https://ejemplo.com/product6imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 7,
+     "title": "Producto 7",
+     "description": "Descripcion 7",
+     "price": 10975,
+     "code": "stu90177",
+     "stock": 83,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product7imagen1.jpg\"",
+      "\"https://ejemplo.com/product7imagen2.jpg\"",
+      "\"https://ejemplo.com/product7imagen3.jpg\"",
+      "\"https://ejemplo.com/product7imagen4.jpg\"",
+      "\"https://ejemplo.com/product7imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 8,
+     "title": "Producto 8",
+     "description": "Descripcion 8",
+     "price": 1453,
+     "code": "vwx23488",
+     "stock": 79,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product8imagen1.jpg\"",
+      "\"https://ejemplo.com/product8imagen2.jpg\"",
+      "\"https://ejemplo.com/product8imagen3.jpg\"",
+      "\"https://ejemplo.com/product8imagen4.jpg\"",
+      "\"https://ejemplo.com/product8imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 9,
+     "title": "Producto 9",
+     "description": "Descripcion 9",
+     "price": 4386,
+     "code": "yza56799",
+     "stock": 80,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product9imagen1.jpg\"",
+      "\"https://ejemplo.com/product9imagen2.jpg\"",
+      "\"https://ejemplo.com/product9imagen3.jpg\"",
+      "\"https://ejemplo.com/product9imagen4.jpg\"",
+      "\"https://ejemplo.com/product9imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 10,
+     "title": "Producto 10",
+     "description": "Descripcion 10",
+     "price": 5638,
+     "code": "bcd89010a",
+     "stock": 56,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product10imagen1.jpg\"",
+      "\"https://ejemplo.com/product10imagen2.jpg\"",
+      "\"https://ejemplo.com/product10imagen3.jpg\"",
+      "\"https://ejemplo.com/product10imagen4.jpg\"",
+      "\"https://ejemplo.com/product10imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 11,
+     "title": "Producto 11",
+     "description": "Descripcion 11",
+     "price": 9174,
+     "code": "efg11121b",
+     "stock": 51,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product11imagen1.jpg\"",
+      "\"https://ejemplo.com/product11imagen2.jpg\"",
+      "\"https://ejemplo.com/product11imagen3.jpg\"",
+      "\"https://ejemplo.com/product11imagen4.jpg\"",
+      "\"https://ejemplo.com/product11imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 12,
+     "title": "Producto 12",
+     "description": "Descripcion 12",
+     "price": 3522,
+     "code": "hij13232c",
+     "stock": 32,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product12imagen1.jpg\"",
+      "\"https://ejemplo.com/product12imagen2.jpg\"",
+      "\"https://ejemplo.com/product12imagen3.jpg\"",
+      "\"https://ejemplo.com/product12imagen4.jpg\"",
+      "\"https://ejemplo.com/product12imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 13,
+     "title": "Producto 13",
+     "description": "Descripcion 13",
+     "price": 6999,
+     "code": "klm15343d",
+     "stock": 66,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product13imagen1.jpg\"",
+      "\"https://ejemplo.com/product13imagen2.jpg\"",
+      "\"https://ejemplo.com/product13imagen3.jpg\"",
+      "\"https://ejemplo.com/product13imagen4.jpg\"",
+      "\"https://ejemplo.com/product13imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 14,
+     "title": "Producto 14",
+     "description": "Descripcion 14",
+     "price": 9747,
+     "code": "nop17454e",
+     "stock": 23,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product14imagen1.jpg\"",
+      "\"https://ejemplo.com/product14imagen2.jpg\"",
+      "\"https://ejemplo.com/product14imagen3.jpg\"",
+      "\"https://ejemplo.com/product14imagen4.jpg\"",
+      "\"https://ejemplo.com/product14imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 15,
+     "title": "Producto 15",
+     "description": "Descripcion 15",
+     "price": 10693,
+     "code": "qrs19565f",
+     "stock": 50,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product15imagen1.jpg\"",
+      "\"https://ejemplo.com/product15imagen2.jpg\"",
+      "\"https://ejemplo.com/product15imagen3.jpg\"",
+      "\"https://ejemplo.com/product15imagen4.jpg\"",
+      "\"https://ejemplo.com/product15imagen5.jpg\""
+     ]
+    },
+    {
+     "productID": 16,
+     "title": "Producto Prueba 1",
+     "description": "Este es un producto prueba 1",
+     "price": 2032,
+     "code": "abc123119999",
+     "stock": 48,
+     "status": true,
+     "thumbnails": [
+      "\"https://ejemplo.com/product16imagen1.jpg\"",
+      "\"https://ejemplo.com/product16imagen2.jpg\"",
+      "\"https://ejemplo.com/product16imagen3.jpg\"",
+      "\"https://ejemplo.com/product16imagen4.jpg\"",
+      "\"https://ejemplo.com/product16imagen5.jpg\""
+     ]
+    }
+   ]

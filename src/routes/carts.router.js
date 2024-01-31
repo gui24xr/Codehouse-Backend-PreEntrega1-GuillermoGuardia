@@ -1,32 +1,18 @@
 import express from 'express'
 import { cartsManager } from '../controllers/carts-manager.js'
+//Importo la instancia que maneja productos que esta activa ya.
+import { productManager } from './products.router.js'
 
 //Manejo de los recursos de mi servidor
-const PATHFILECARTS = './cartsfile.json'
+const PATHFILECARTS = './src/models/carrito.json'
 const myCartsManager = new cartsManager(PATHFILECARTS)
-
-//Testing //4 carros
-myCartsManager.createCart()
-myCartsManager.createCart()
-myCartsManager.createCart()
-myCartsManager.createCart()
-
-myCartsManager.addProductInCart(1,24,24)
-myCartsManager.addProductInCart(1,24,24)
-myCartsManager.addProductInCart(2,12,2)
-myCartsManager.addProductInCart(2,24,1)
-myCartsManager.addProductInCart(3,2,1)
-myCartsManager.addProductInCart(3,3,1)
-myCartsManager.addProductInCart(3,2,1)
-console.log('cart: ',myCartsManager.getProducsFromCart(1))
-console.log('cart: ',myCartsManager.getProducsFromCart(2))
-console.log('cart: ',myCartsManager.getProducsFromCart(3))
-//console.log('cart: ',myCartsManager.getProducsFromCart(4))
 
 //Creo mi instancia de objeto Router
 export const router = express.Router()
 
+
 router.get('/api/carts/:cid',(req,res)=>{
+    
    const {cid} = req.params
     //Pido el carro al manager y como se que devuelve undefined si no lo encuentra.
     if (myCartsManager.existCart(cid)){
@@ -41,14 +27,36 @@ router.get('/api/carts/:cid',(req,res)=>{
 
 })
 
-router.post('/api/carts',(req,res)=>{
+router.post('/api/carts',async (req,res)=>{
     //Obtengo la response del cliente con lo cual creare el carrito
-    const clientRequestBody = req.body
-    //console.log('Recibido: ',clientRequestBody)
-    myCartsManager.createCart()
-    res.send('Se ah creado un carrito !')
+    try{
+        const clientRequestBody = req.body
+        //console.log('Recibido: ',clientRequestBody)
+        const createdCartId = await myCartsManager.createCart()
+        res.send(`Se ah creado un carrito con id ${createdCartId} !`)
+        }
+    catch(error){
+        console.log('Error al crear carrito !.', error)
+        res.status(500).json({error: 'Error del servidor'})
+    }
 })
 
-router.post('/api/carts/:cid/products/:pid',(req,res)=>{
 
+router.post('/api/carts/:cid/products/:pid',async(req,res)=>{
+    /*
+    Me pide agregar el producto de pid al cart de cartId
+    */
+    try{
+        const {cid:cartId,pid:productId} = req.params
+        //Obtengo el productos.
+        //const productToAdd = await productManager.getProductById(productId)
+        //Agrego el producto en cantidad 1
+        await myCartsManager.addProductInCart(cartId,productId,1)
+        
+        res.send('taca')
+    }
+    catch{
+        console.log('Error al ingresar el producto carrito !.', error)
+        res.status(500).json({error: 'Error del servidor'})
+    }
 })
