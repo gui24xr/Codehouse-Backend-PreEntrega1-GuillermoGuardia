@@ -168,3 +168,4 @@ const miNuevoArray = myArray.map( item => (
 
 const stringifeado = JSON.stringify(miNuevoArray,null,1)
 console.log(stringifeado)
+

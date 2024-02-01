@@ -17,7 +17,7 @@ router.get('/api/carts/:cid',(req,res)=>{
     //Pido el carro al manager y como se que devuelve undefined si no lo encuentra.
     if (myCartsManager.existCart(cid)){
         const products = myCartsManager.getProducsFromCart(cid)
-        res.json(products)
+        res.json({'Carro ID':cid,'Lista de productos':products})
     }
     else{
         res.send(`No existe el carro id ${cid}`)
@@ -33,7 +33,7 @@ router.post('/api/carts',async (req,res)=>{
         const clientRequestBody = req.body
         //console.log('Recibido: ',clientRequestBody)
         const createdCartId = await myCartsManager.createCart()
-        res.send(`Se ah creado un carrito con id ${createdCartId} !`)
+        res.json({'Carro creado id:':createdCartId})
         }
     catch(error){
         console.log('Error al crear carrito !.', error)

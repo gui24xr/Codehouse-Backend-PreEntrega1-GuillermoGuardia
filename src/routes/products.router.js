@@ -21,10 +21,11 @@ router.get('/api/products', async (req,res)=>{
       SI no trajo limit devuelvo la lista entera de productos.
       Si ocurrio un error doy aviso y devuelvo en la respuesta un status en forma de json.
     */
+      
     try{
         const limit = req.query.limit
         const productos = await productManager.getProducts()
-
+        
         limit 
         ? res.json(productos.slice(0,limit))
         : res.json(productos)
@@ -58,6 +59,7 @@ router.post('/api/products', async (req,res)=>{
  
     try{
         const productToAdd =req.body
+        console.log('prrr: ', productToAdd)
         await productManager.AddProduct(productToAdd)
         res.json('Producto agregado con exito !')
 
@@ -74,7 +76,6 @@ router.delete('/api/products/:pid', async(req,res)=>{
         const {pid:productIdToDelete} = req.params
         await productManager.deleteProduct(productIdToDelete)
         res.json(`Producto con id ${productIdToDelete} eliminado con exito !`)
-        res.json('Producto Eliminado !')
     }catch(error){
         console.log('Error al obtener producto.', error)
         res.status(500).json({error: 'Error del servidor'})
